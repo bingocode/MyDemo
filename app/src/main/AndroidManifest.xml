@@ -32,6 +32,12 @@
             android:label="@string/title_activity_fullscreen"
             android:theme="@style/FullscreenTheme" >
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_mainactivity"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
     </application>
 
 </manifest>

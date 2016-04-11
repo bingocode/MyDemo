@@ -35,7 +35,7 @@ public class FullscreenActivity extends AppCompatActivity {
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     private static final boolean AUTO_HIDE = true;
-    private static final String HOSTNMAE_LAB="192.168.1.109";
+    private static final String HOSTNMAE_LAB="192.168.1.128";
     private static final String HOSTNMAE_DOM="10.131.245.201";
     private static final int PORT=10900;
 
@@ -141,7 +141,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
 
                     Socket socket;
-                socket = new Socket(HOSTNMAE_DOM, PORT);
+                socket = new Socket(HOSTNMAE_LAB, PORT);
                 // 客户端启动ClientThread线程不断读取来自服务器的数据
                 new Thread(new ClientThread(socket, handler)).start();
                 os = socket.getOutputStream();
